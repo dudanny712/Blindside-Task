@@ -2,7 +2,7 @@ import React from 'react'
 import './_header.scss';
 const Header = () => {
   return (
-    <div>
+    <div className="border border-dark">
       Header
     </div>
   )
