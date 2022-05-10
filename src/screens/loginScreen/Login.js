@@ -1,10 +1,10 @@
 import React,{useEffect} from 'react'
 import "./_login.scss";
 
-import Logo from "../../images/youtube-logo.png";
+import Logo from "/Users/danielanthony/Desktop/Job Prep/Projects/blindsidetask/src/youtube-logo.png";
 import { useDispatch, useSelector } from 'react-redux';
 import {login} from '../../redux/actions/auth.action.js';
-import {useHistory} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -16,7 +16,7 @@ const Login = () => {
         dispatch(login())
     }
 
-    const history = useHistory()
+    const history = useNavigate()
 
     useEffect(() => {
         

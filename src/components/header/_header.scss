@@ -4,19 +4,24 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+
    padding: 1rem 3rem;
+
    background-color: $black-primary;
+
    height: 10vh;
    width: 100%;
+
    position: fixed;
    top: 0;
+
    z-index: 999;
-   &_menu {
+   &__menu {
       display: none;
    }
-   &_logo {
-      width: 120px;
-      height: 120px;
+   &__logo {
+      width: 30px;
+      height: 30px;
       object-fit: contain;
       display: block;
    }
@@ -54,7 +59,7 @@
       }
    }
 
-   &_icons {
+   &__icons {
       flex: 0.15;
       display: flex;
       justify-content: space-around;
@@ -76,14 +81,14 @@
          flex: 1;
       }
 
-      &_menu {
+      &__menu {
          display: block;
       }
-      &_logo {
+      &__logo {
          display: none;
       }
 
-      &_icons > *:not(img) {
+      &__icons > *:not(img) {
          display: none;
       }
    }

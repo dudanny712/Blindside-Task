@@ -6,7 +6,7 @@ import HomeScreen from "./screens/Homescreen/Homescreen";
 import { Container } from 'react-bootstrap';
 import Login from './screens/loginScreen/Login';
 import WatchScreen from './screens/watchScreen/WatchScreen'
-import { Redirect } from 'react-router';
+import { Navigate} from 'react-router';
 import { Route,Routes, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import SearchScreen from './screens/SearchScreen';
@@ -62,7 +62,7 @@ const App = () => {
         <Route exact path="/watch/:id">
           <Layout><WatchScreen/></Layout>
         </Route>
-        <Redirect to="/" />
+        <Navigate to="/" />
       </Routes>
     </>
   )
